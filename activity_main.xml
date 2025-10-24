@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info" android:paddingBottom="8dp"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pont (dot) hossz:"/>
+    <SeekBar android:id="@+id/sbDot" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/tvDotVal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="120 ms"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Vonal (dash) hossz:"/>
+    <SeekBar android:id="@+id/sbDash" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/tvDashVal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="360 ms"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Betűk közti szünet:"/>
+    <SeekBar android:id="@+id/sbLetter" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/tvLetterVal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="360 ms"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Szavak közti szünet:"/>
+    <SeekBar android:id="@+id/sbWord" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/tvWordVal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="840 ms"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Megjegyzés:" android:paddingTop="12dp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="A minta 2000 ms szünet után újraindul, amíg a hívás folyamatban van."/>
+
+</LinearLayout>
+</ScrollView>
